@@ -1,0 +1,7 @@
+molecule,model,n_groups,groups,atoms_covered
+acetaminophen,UNIFAC,0,,0
+acetaminophen,Joback,6,-CH3:1 + ring=CH-:4 + ring=C<:2 + -OH (phenol):1 + >C=O (non-ring):1 + >NH (non-ring):1,11
+"2,4-dinitrophenol",UNIFAC,3,ACH:3 + ACOH:1 + ACNO2:2,13
+"2,4-dinitrophenol",Joback,4,ring=CH-:3 + ring=C<:3 + -OH (phenol):1 + -NO2:2,13
+cyclophosphamide,UNIFAC,0,,0
+cyclophosphamide,Joback,0,,0

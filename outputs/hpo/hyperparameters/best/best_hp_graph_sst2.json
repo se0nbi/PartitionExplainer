@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "dataset": "graph_sst2",
+  "model_class": "gcn",
+  "frozen_context": {
+    "split_seed": 42,
+    "n_val_graphs": 25,
+    "n_test_graphs": 30,
+    "n_perm": 50,
+    "n_perm_confirm": 50,
+    "sa_seed": 42,
+    "epochs": 150,
+    "sparsity_grid": [
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "obj_sparsities": [
+      0.5,
+      0.7,
+      0.9
+    ],
+    "baseline_methods": [
+      "grad_x_input",
+      "gnnexplainer",
+      "pgexplainer",
+      "graphshapiq",
+      "gstarx",
+      "sme"
+    ]
+  },
+  "hp": {
+    "gamma_H": 0.9239023294737191,
+    "gamma_S": 0.3400117504915303,
+    "cov_p": 1.1591016498663946,
+    "mu_c": 1.5214215916309253,
+    "mu_beta": 0.5108060820521317,
+    "node_aug_coef": 0.02164010684826371,
+    "group_aug_coef": 0.8409037537414423,
+    "sa_T0": 1.0,
+    "sa_alpha": 0.99,
+    "sa_iter": 100,
+    "n_perm": 50
+  },
+  "is_default": false,
+  "accepted": true,
+  "confirm_rows": [
+    {
+      "hp": {
+        "gamma_H": 0.4,
+        "gamma_S": 0.3,
+        "cov_p": 1.0,
+        "mu_c": 1.0,
+        "mu_beta": 0.5,
+        "node_aug_coef": 0.0,
+        "group_aug_coef": 0.0,
+        "sa_T0": 1.0,
+        "sa_alpha": 0.99,
+        "sa_iter": 100,
+        "n_perm": 50
+      },
+      "is_default": true,
+      "val_obj": -0.08815403858144905,
+      "val_wins": 8,
+      "val_raw": -0.08815403858144905,
+      "val_pareto": 0,
+      "test_obj": 0.5663746272746646,
+      "test_wins": 9,
+      "test_raw": 0.5663746272746646,
+      "test_pareto": 0,
+      "accept": false
+    },
+    {
+      "hp": {
+        "gamma_H": 0.9239023294737191,
+        "gamma_S": 0.3400117504915303,
+        "cov_p": 1.1591016498663946,
+        "mu_c": 1.5214215916309253,
+        "mu_beta": 0.5108060820521317,
+        "node_aug_coef": 0.02164010684826371,
+        "group_aug_coef": 0.8409037537414423,
+        "sa_T0": 1.0,
+        "sa_alpha": 0.99,
+        "sa_iter": 100,
+        "n_perm": 50
+      },
+      "is_default": false,
+      "val_obj": -0.05922472224971802,
+      "val_wins": 8,
+      "val_raw": -0.05922472224971802,
+      "val_pareto": 0,
+      "test_obj": 0.7352928681867565,
+      "test_wins": 10,
+      "test_raw": 0.7352928681867565,
+      "test_pareto": 0,
+      "accept": true
+    }
+  ],
+  "default_val": {
+    "raw": -0.08815403858144905,
+    "wins": 8,
+    "pareto_violations": 0,
+    "n_cells": 15
+  },
+  "default_test": {
+    "raw": 0.5663746272746646,
+    "wins": 9,
+    "pareto_violations": 0,
+    "n_cells": 15
+  },
+  "meta": {
+    "n_graphs": 70042.0,
+    "nodes_mean": 10.42,
+    "nodes_median": 7.0,
+    "nodes_std": 8.827434508394838,
+    "edges_mean": 18.84,
+    "deg_mean": 1.5665594143066968,
+    "density_mean": 0.3534405856933032,
+    "clustering_mean": 0.0,
+    "label_pos_frac": 0.565,
+    "input_dim": 768.0,
+    "num_classes": 2.0,
+    "has_ground_truth": 0.0,
+    "val_acc": 0.8565105653912051
+  },
+  "robust_confirmed": true
+}

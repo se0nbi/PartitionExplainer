@@ -1,0 +1,10 @@
+{
+  "val_auroc": 0.891455733808675,
+  "test_auroc": 0.8800386941658214,
+  "n_train": 4643,
+  "n_val": 580,
+  "n_test": 581,
+  "input_dim": 8,
+  "hidden": 64,
+  "epochs": 50
+}

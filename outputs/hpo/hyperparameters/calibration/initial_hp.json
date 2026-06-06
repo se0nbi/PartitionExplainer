@@ -1,0 +1,13 @@
+{
+  "gamma_H": 0.4,
+  "gamma_S": 0.3,
+  "cov_p": 1.0,
+  "mu_c": 1.0,
+  "mu_beta": 0.5,
+  "node_aug_coef": 0.0,
+  "group_aug_coef": 0.0,
+  "sa_T0": 1.0,
+  "sa_alpha": 0.99,
+  "sa_iter": 100,
+  "n_perm": 50
+}

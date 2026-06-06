@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Datasets (downloaded on first run; large)
+outputs/dig_data/
+outputs/dig_data_newds/
+
+# Third-party baseline checkouts (clone separately; see README)
+_vendor/
+
+# Large raw dataset archives
+*.zip
+
+# Logs and scratch
+*.log
+outputs/**/*.log
+_overnight/
+_hpo_snapshots/
+_verify/
+
+# HPO search internals (results needed to reproduce tables live in outputs/hpo/)
+outputs/hpo_newds/
+outputs/hpo/*.md
+outputs/hpo/**/*.pkl
+outputs/hpo/_*backup*/
+outputs/hpo/_dropped_datasets/
+outputs/hpo/eval_records/**/eval_records_gsiq_*.csv
+outputs/hpo/hyperparameters/**/predicted_hp_*.json
+
+# Superseded 9-dim model checkpoint (either location)
+outputs/dumplinggnn_final.pth
+outputs/models/dumplinggnn_final.pth
+
+# Per-round tuning ledgers + scratch / diagnostic tables (superseded by outputs/hpo/)
+outputs/benchmark_round*.csv
+outputs/compare_round*.csv
+outputs/RESULTS_SUMMARY.csv
+outputs/ablation_*.csv
+outputs/benchmark_hfid_summary.csv
+outputs/comparison_headline.csv
+outputs/leaderboard_final.csv
+outputs/leaderboard_7datasets.csv
+outputs/loss_analysis.csv
+outputs/spmotif_ood/
+outputs/hpo/p3_gsiq_phase1.csv
+outputs/hpo/report_prerobust_*.csv
+outputs/hpo/significance.csv
+outputs/hpo/split_synth_real.csv
+outputs/hpo/stronger_default.csv
+
+# Project notes / manuscript (not part of the public release)
+main.tex
+main_ieee.tex
+main_ieee.pdf
+IEEE_template.tex
+
+# LaTeX build artifacts
+*.aux
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+
+# Internal / superseded result tables (only overall_winners_FINAL16.csv is canonical)
+outputs/hpo/overall_winners*.csv
+!outputs/hpo/board/overall_winners_FINAL16.csv
+outputs/hpo/margin_map.csv
+outputs/hpo/multiseed.csv

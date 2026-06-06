@@ -1,0 +1,4 @@
+molecule,smiles,delta_z,n_groups,top_interaction_score,joback_sym_jaccard,unifac_sym_jaccard
+acetaminophen,CC(=O)Nc1ccc(cc1)O,0.8664631843566895,2,0.34659125506877897,0.43452380952380953,
+"2,4-dinitrophenol",Oc1ccc(cc1[N+]([O-])=O)[N+]([O-])=O,7.632157325744629,2,-2.9718417106661947,0.2799873737373737,0.3472222222222222
+cyclophosphamide,ClCCN(CCCl)P1(=O)NCCCO1,2.2891886234283447,2,0.24324483722448345,,
